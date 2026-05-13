@@ -1,104 +1,62 @@
-# Spring Boot Web Application – Java
+# Spring Boot Web Application
 
-A backend web application developed using **Java Spring Boot**, following a
-layered **MVC architecture**. The application demonstrates core backend
-development concepts including RESTful APIs, database integration, and
-CRUD operations.
+This repository contains a Java Spring Boot web application developed as part of my university software development coursework.
 
-This project was developed as part of a university module and showcases
-enterprise-style backend development using industry-standard frameworks.
+The project demonstrates core backend development concepts including MVC architecture, CRUD operations, database integration, form handling, and server-side rendering using Thymeleaf.
 
 ---
 
-## 🚀 Features
+## Project Overview
 
-- RESTful API endpoints using Spring Boot
-- MVC architecture (Controller, Service, Repository layers)
-- CRUD operations (Create, Read, Update, Delete)
-- Database integration using Spring Data JPA
+The aim of this project was to build a structured Java web application using Spring Boot and common enterprise development patterns.
+
+The application follows a layered architecture where responsibilities are separated between controllers, services, repositories, models, and views. This made the project easier to organise, test, debug, and extend.
+
+---
+
+## Main Features
+
+- Java Spring Boot web application
+- Layered MVC architecture
+- Controller, service, and repository structure
+- CRUD operations
+- Spring Data JPA database integration
 - H2 database for development and testing
-- Server-side rendering using Thymeleaf
-- Form handling and request validation
-- Clean, maintainable project structure
+- Thymeleaf server-side views
+- Form handling
+- Request mapping
+- Basic validation and error handling
+- Maven-based project structure
 
 ---
 
-## 🏗️ Architecture Overview
+## Tech Stack
 
-The application follows a layered architecture:
-
-- **Controller Layer**
-  - Handles HTTP requests (GET, POST, PUT, DELETE)
-  - Maps endpoints to business logic
-
-- **Service Layer**
-  - Contains core business logic
-  - Acts as a bridge between controllers and repositories
-
-- **Repository Layer**
-  - Manages database operations using Spring Data JPA
-  - Provides persistence and query functionality
-
-- **Database**
-  - H2 in-memory / file-based database for development
+| Area | Technology |
+|---|---|
+| Language | Java 17 |
+| Framework | Spring Boot |
+| Web layer | Spring MVC |
+| Data access | Spring Data JPA |
+| Database | H2 Database |
+| Views | Thymeleaf |
+| Build tool | Maven |
+| Development tools | IntelliJ IDEA / VS Code, Git, GitHub |
 
 ---
 
-## 🛠️ Tech Stack
+## Repository Structure
 
-- Java
-- Spring Boot
-- Spring MVC
-- Spring Data JPA
-- Thymeleaf
-- H2 Database
-- Maven
-
----
-
-## 🧪 Testing & Debugging
-
-The application was tested by:
-- Sending HTTP requests to API endpoints
-- Verifying correct CRUD behaviour
-- Handling validation errors and edge cases
-- Debugging common backend issues such as:
-  - Database persistence behaviour
-  - Request mapping errors
-  - CORS configuration during development
-
----
-
-## 📚 What I Learned
-
-- Building backend applications using Spring Boot
-- Implementing MVC architecture in practice
-- Designing and testing RESTful APIs
-- Working with databases and JPA repositories
-- Debugging real-world backend issues
-- Writing clean, maintainable Java code
-
----
-
-## 🔮 Future Improvements
-
-- Add authentication and authorisation (Spring Security)
-- Integrate a modern frontend (React)
-- Replace H2 with PostgreSQL or MySQL
-- Add automated tests using JUnit and Mockito
-- Deploy the application to a cloud platform
-
----
-
-## 📄 Academic Context
-
-This project was completed as part of a university coursework module and
-demonstrates backend software engineering principles using enterprise
-technologies.
-
----
-
-## 👤 Author
-
-Muhammad Shahzaib Shehzad  
-BSc (Hons) Computer Science
+```text
+spring-boot-web-application/
+├── .mvn/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   └── resources/
+│   └── test/
+├── pom.xml
+├── mvnw
+├── mvnw.cmd
+├── .gitignore
+└── README.md
